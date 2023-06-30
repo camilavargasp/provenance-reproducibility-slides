@@ -409,8 +409,8 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="computational-provenance-and-workflows" class="slide level2">
-<h2>Computational Provenance and Workflows</h2>
+<section id="computational-provenance-workflows" class="slide level2">
+<h2>Computational Provenance &amp; Workflows</h2>
 <p>Computational provenance refers to the origin and processing history of data including:</p>
 <ul>
 <li>Input data</li>
@@ -421,7 +421,7 @@
 </ul>
 <p><strong>Computational provenance is a formalized description of a workflow from the origin of the data to it’s final outcome</strong>.</p>
 <aside class="notes">
-<p>When we put these all together with formal documentation, we create a <strong>computational workflow</strong> that captures all of the steps from initial data cleaning and integration, through analysis, modeling, and visualization. In other words,</p>
+<p>When we put these all together with formal documentation, we create a <strong>computational workflow</strong> that captures all of the steps from initial data cleaning and integration, through analysis, modeling, and visualization.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -558,6 +558,11 @@
 <li>Edit <code>./analysis/paper/paper.Rmd</code> to begin writing your paper and your analysis in the same document</li>
 <li>Add any citations to <code>./analysis/paper/pnas-sample.bib</code></li>
 <li>Add any longer R scripts that don’t fit in your paper in an <code>R</code> folder at the top level</li>
+</ul>
+</section>
+<section id="things-we-can-do-with-our-research-compendium-1" class="slide level2">
+<h2>Things we can do with our research compendium:</h2>
+<ul>
 <li>Add raw data to <code>./data/raw_data</code></li>
 <li>Write out any derived data (generated in <code>paper.Rmd</code>) to <code>./data/derived_data</code></li>
 <li>Write out any figures in <code>./analysis/figures</code></li>
@@ -645,6 +650,11 @@
 <li>Actions are processes that are triggered in GitHub events (like a push) and run automatically.</li>
 <li>In this case, the Action that is set up will build your Docker image on GitHub.</li>
 <li>This means that the code that knits your paper is run, and an updated version of your paper is knit.</li>
+</ul>
+</section>
+<section id="continuous-integration" class="slide level2">
+<h2>Continuous Integration</h2>
+<ul>
 <li>This is called <strong>continuous integration,</strong> and is extremely convenient for developing products like this, since the build step can be taken care of automatically as you push to your repository.</li>
 </ul>
 

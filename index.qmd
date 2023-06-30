@@ -77,7 +77,7 @@ A recent study of publicly-available datasets in the Harvard Database repository
 The figure below from Trisovic et al. shows a *sankey diagram* of how code cleaning was able to fix common errors.
 :::
 
-## Computational Provenance and Workflows
+## Computational Provenance & Workflows
 
 Computational provenance refers to the origin and processing history of data including:
 
@@ -91,7 +91,6 @@ Computational provenance refers to the origin and processing history of data inc
 
 ::: notes
 When we put these all together with formal documentation, we create a **computational workflow** that captures all of the steps from initial data cleaning and integration, through analysis, modeling, and visualization.
-In other words,
 :::
 
 ## Example
@@ -184,6 +183,9 @@ Rather than a constrained set of rules, the research compendium is a scaffold up
 -   Edit `./analysis/paper/paper.Rmd` to begin writing your paper and your analysis in the same document
 -   Add any citations to `./analysis/paper/pnas-sample.bib`
 -   Add any longer R scripts that don't fit in your paper in an `R` folder at the top level
+
+## Things we can do with our research compendium:
+
 -   Add raw data to `./data/raw_data`
 -   Write out any derived data (generated in `paper.Rmd`) to `./data/derived_data`
 -   Write out any figures in `./analysis/figures`
@@ -245,6 +247,9 @@ Let's see how it works...
 -   Actions are processes that are triggered in GitHub events (like a push) and run automatically.
 -   In this case, the Action that is set up will build your Docker image on GitHub.
 -   This means that the code that knits your paper is run, and an updated version of your paper is knit.
+
+## Continuous Integration
+
 -   This is called **continuous integration,** and is extremely convenient for developing products like this, since the build step can be taken care of automatically as you push to your repository.
 
 ![](images/github-actions.png)
